@@ -1,0 +1,25 @@
+{
+  "name": "graphql-react-node-mongodb-svelte-example",
+  "version": "1.0.0",
+  "description": "A full-stack example with GraphQL, React, Node.js, MongoDB and Svelte",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client-react": "cd client-react && npm start",
+    "client-svelte": "cd client-svelte && npm run dev",
+    "install-all": "npm install && cd client-react && npm install && cd ../client-svelte && npm install --legacy-peer-deps",
+    "dev": "concurrently \"npm run server\" \"npm run client-react\" \"npm run client-svelte\""
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.12.0",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "mongoose": "^7.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
