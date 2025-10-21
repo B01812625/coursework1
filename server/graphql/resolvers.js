@@ -27,6 +27,7 @@ const resolvers = {
       try {
         const user = new User({ name, email, age });
         await user.save();
+        console.log("save user")
         return user;
       } catch (error) {
         throw new Error('Error creating user');

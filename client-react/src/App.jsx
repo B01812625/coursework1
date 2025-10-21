@@ -178,7 +178,7 @@ function App() {
             <h3>{user.name}</h3>
             <p>Email: {user.email}</p>
             {user.age && <p>Age: {user.age}</p>}
-            <p>Created: {new Date(user.createdAt).toLocaleDateString()}</p>
+            <p>Created: {new Date( parseInt(user.createdAt) ).toLocaleString()}</p>
             <div className="user-actions">
               <button className="edit-btn" onClick={() => handleEdit(user)}>Edit</button>
               <button className="delete-btn" onClick={() => handleDelete(user.id)}>Delete</button>

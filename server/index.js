@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 
 // 连接MongoDB
-mongoose.connect('mongodb://root:123456@192.168.0.73:27017/graphql_example?authSource=admin', {
+mongoose.connect('mongodb://localhost:27017/graphql_example', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
