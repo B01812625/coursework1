@@ -1,90 +1,90 @@
 # GraphQL + React + Node.js + MongoDB + Svelte 示例项目
 
-这是一个完整的全栈项目示例，展示了如何使用GraphQL、React、Node.js、MongoDB和Svelte构建现代Web应用程序。
+This is a complete full-stack project example that demonstrates how to build a modern web application using GraphQL, React, Node.js, MongoDB, and Svelte.
 
-## 项目结构
+## Project Structure
 
 ```
-├── server/              # Node.js GraphQL服务器
-│   ├── graphql/         # GraphQL相关代码
-│   │   ├── typeDefs.js  # GraphQL类型定义
-│   │   └── resolvers.js # GraphQL解析器
-│   ├── models/          # MongoDB模型
-│   │   └── User.js      # 用户模型
-│   └── index.js         # 服务器入口
-├── client-react/        # React客户端
-│   ├── src/             # React源代码
-│   └── ...              # React项目配置
-├── client-svelte/       # Svelte客户端
-│   ├── src/             # Svelte源代码
-│   └── ...              # Svelte项目配置
-└── package.json         # 项目配置
+├── server/              # Node.js GraphQL sever
+│   ├── graphql/         # GraphQL Relevant code
+│   │   ├── typeDefs.js  # GraphQL Type definition
+│   │   └── resolvers.js # GraphQL parser
+│   ├── models/          # MongoDB model
+│   │   └── User.js      # User Model
+│   └── index.js         # Server entrance
+├── client-react/        # React client Sever
+│   ├── src/             # React source code
+│   └── ...              # React Project configuration
+├── client-svelte/       # Svelte client-side
+│   ├── src/             # Svelte source code
+│   └── ...              # Svelte Project Configuration
+└── package.json         # Project Configuration
 ```
 
-## 技术栈
+## Technology stack
 
-- **后端**：
+- **backend**：
   - Node.js
   - Express
   - GraphQL (Apollo Server)
   - MongoDB (Mongoose)
 
-- **前端**：
-  - React (使用Apollo Client)
-  - Svelte (使用svelte-apollo)
-  - Vite (构建工具)
+- **frontend**：
+  - React (Apollo Client)
+  - Svelte (svelte-apollo)
+  - Vite (Build tool)
 
-## 功能特性
+## Functional features
 
-- 用户管理（创建、读取、更新、删除）
-- GraphQL API接口
-- 双前端实现（React和Svelte）
-- 响应式UI设计
+- User management (create, read, update, delete)
+- GraphQL API interface
+- Dual frontend implementation（React and Svelte）
+- Responsive UI Design
 
-## 快速开始
+## Quick Start
 
-### 前提条件
+### Precondition
 
-确保你的系统已安装以下软件：
+Make sure your system has the following software installed:
 - Node.js (v14+)
 - MongoDB (v4+)
 
-### 安装步骤
+### Installation steps
 
-1. 克隆项目（或直接下载）
+1. Clone the project (or download it directly)
 
-2. 安装依赖
+2. Install dependencies
 ```bash
 npm run install-all
 ```
 
-3. 启动MongoDB服务
+3. Start the MongoDB service
 
-4. 运行项目
+4.Run the project
 ```bash
-# 启动所有服务（服务器、React客户端、Svelte客户端）
+# Start all services (server, React client, Svelte client)
 npm run dev
 
-# 或者单独启动
-# 启动服务器
+# or start separately
+# Start the server
 npm run server
-# 启动React客户端
+# Start the React client
 npm run client-react
-# 启动Svelte客户端
+# Start the Svelte client
 npm run client-svelte
 ```
 
-### 访问地址
+### Access address
 
 - GraphQL Playground: http://localhost:5000/graphql
-- React客户端: http://localhost:3000
-- Svelte客户端: http://localhost:3001
+- React client: http://localhost:3000
+- Svelte client: http://localhost:3001
 
-## 使用说明
+## Instructions for Use
 
 ### GraphQL API
 
-#### 查询
+#### Query
 ```graphql
 query {
   users {
@@ -107,7 +107,7 @@ query {
 }
 ```
 
-#### 变更
+#### change
 ```graphql
 mutation {
   createUser(name: "John Doe", email: "john@example.com", age: 30) {
@@ -134,8 +134,7 @@ mutation {
 }
 ```
 
-## 注意事项
-
-1. 确保MongoDB服务正在运行，并且连接字符串正确（默认为mongodb://localhost:27017/graphql_example）
-2. 三个服务运行在不同的端口上：服务器(5000)、React客户端(3000)、Svelte客户端(3001)
-3. 两个前端客户端提供相同的功能，只是使用不同的框架实现
+##Notes
+1. Ensure that the MongoDB service is running and the connection string is correct (the default is mongodb://localhost:27017/graphql_example)
+2. The three services run on different ports: server (5000), React client (3000), Svelte client (3001)
+3. The two front-end clients provide the same functionality, but are implemented using different frameworks
