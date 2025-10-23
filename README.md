@@ -1,4 +1,4 @@
-# GraphQL + React + Node.js + MongoDB + Svelte 示例项目
+# GraphQL + React + Node.js + MongoDB + Svelte INstance project
 
 This is a complete full-stack project example that demonstrates how to build a modern web application using GraphQL, React, Node.js, MongoDB, and Svelte.
 
